@@ -21,7 +21,7 @@
         }
       },
       "description": {{ .Summary | plainify | safeHTML }},
-      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+      "keywords": [{{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}, {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
     }
     {{ end }}
     {
