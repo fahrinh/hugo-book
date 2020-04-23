@@ -1,8 +1,6 @@
 <!-- This partial can be replaced to support other commenting engines -->
 <!-- {{ template "_internal/disqus.html" . }} -->
 
-{{ if and .IsPage (ne .Params.comment false) }}
-
 <!-- Commento -->
 {{- if .Site.Params.commento.enable -}}
 <div id="comments">
@@ -147,6 +145,4 @@
         visitor: {{ false }}
     });
 </script>
-{{- end }}
-
 {{- end }}
